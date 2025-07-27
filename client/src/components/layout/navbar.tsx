@@ -41,11 +41,9 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/">
-              <div className="bg-gradient-to-r from-[hsl(var(--genarch-primary))] to-green-400 px-4 py-2 rounded-lg">
-                <h1 className="text-xl font-bold text-white cursor-pointer">
-                  GenArch Labs
-                </h1>
-              </div>
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-[hsl(var(--genarch-primary))] to-green-400 bg-clip-text text-transparent cursor-pointer">
+                GenArch Labs
+              </h1>
             </Link>
           </div>
 
@@ -75,7 +73,7 @@ export default function Navbar() {
                   </button>
                 )
               ))}
-              <Button className="bg-[hsl(var(--genarch-primary))] text-white hover:bg-blue-800 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 mr-4">
+              <Button className="bg-[hsl(var(--genarch-primary))] text-white hover:bg-blue-800 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">
                 Contact
               </Button>
               <Button className="bg-gradient-to-r from-green-500 to-blue-600 text-white hover:from-green-600 hover:to-blue-700 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200">

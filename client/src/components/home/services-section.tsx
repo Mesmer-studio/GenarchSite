@@ -70,8 +70,13 @@ export default function ServicesSection() {
             return (
               <Card key={service.title} className="service-card bg-white p-8 shadow-lg hover:shadow-2xl cursor-pointer">
                 <CardContent className="p-0">
-                  <div className={`bg-gradient-to-br ${service.gradient} p-4 rounded-xl w-16 h-16 flex items-center justify-center mb-6`}>
-                    <IconComponent className="text-white w-8 h-8" />
+                  <div className="relative mb-6">
+                    <div className="w-full h-32 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg mb-4 flex items-center justify-center">
+                      <IconComponent className="w-16 h-16 text-gray-400" />
+                    </div>
+                    <div className={`absolute -bottom-2 -right-2 bg-gradient-to-br ${service.gradient} p-3 rounded-xl shadow-lg`}>
+                      <IconComponent className="text-white w-6 h-6" />
+                    </div>
                   </div>
                   <h3 className="text-2xl font-semibold text-[hsl(var(--genarch-charcoal))] mb-4">{service.title}</h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">
