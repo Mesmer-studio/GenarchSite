@@ -57,8 +57,8 @@ export default function Navbar() {
                     href={item.href}
                     className={`nav-link font-semibold tracking-wide transition-colors duration-300 ${
                       isActive(item.href)
-                        ? "text-cyan-400 font-bold"
-                        : "text-slate-100 hover:text-cyan-400"
+                        ? "text-green-400 font-bold"
+                        : "text-green-400 hover:text-green-300"
                     }`}
                     style={{ fontFamily: 'Orbitron, monospace' }}
                   >
@@ -68,7 +68,7 @@ export default function Navbar() {
                   <button
                     key={item.href}
                     onClick={() => handleNavClick(item)}
-                    className="nav-link font-semibold tracking-wide transition-colors duration-300 text-slate-100 hover:text-cyan-400 cursor-pointer bg-transparent hover:bg-transparent"
+                    className="nav-link font-semibold tracking-wide transition-colors duration-300 text-green-400 hover:text-green-300 cursor-pointer bg-transparent hover:bg-transparent"
                     style={{ fontFamily: 'Orbitron, monospace' }}
                   >
                     {item.label}
@@ -76,13 +76,13 @@ export default function Navbar() {
                 )
               ))}
               <button
-                className="nav-link font-semibold tracking-wide transition-colors duration-300 text-slate-100 hover:text-cyan-400 cursor-pointer bg-transparent hover:bg-transparent"
+                className="nav-link font-semibold tracking-wide transition-colors duration-300 text-green-400 hover:text-green-300 cursor-pointer bg-transparent hover:bg-transparent"
                 style={{ fontFamily: 'Orbitron, monospace' }}
               >
                 Contact
               </button>
               <button
-                className="nav-link font-semibold tracking-wide transition-colors duration-300 text-slate-100 hover:text-cyan-400 cursor-pointer bg-transparent hover:bg-transparent"
+                className="nav-link font-semibold tracking-wide transition-colors duration-300 text-green-400 hover:text-green-300 cursor-pointer bg-transparent hover:bg-transparent"
                 style={{ fontFamily: 'Orbitron, monospace' }}
               >
                 Login
@@ -96,7 +96,7 @@ export default function Navbar() {
               variant="ghost"
               size="sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-slate-100 hover:text-cyan-400"
+              className="text-green-400 hover:text-green-300"
             >
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -114,8 +114,8 @@ export default function Navbar() {
                     href={item.href}
                     className={`block px-3 py-2 font-semibold tracking-wide transition-colors duration-300 ${
                       isActive(item.href)
-                        ? "text-cyan-400 font-bold"
-                        : "text-slate-100 hover:text-cyan-400"
+                        ? "text-green-400 font-bold"
+                        : "text-green-400 hover:text-green-300"
                     }`}
                     style={{ fontFamily: 'Orbitron, monospace' }}
                     onClick={() => setIsMobileMenuOpen(false)}
@@ -126,7 +126,7 @@ export default function Navbar() {
                   <button
                     key={item.href}
                     onClick={() => handleNavClick(item)}
-                    className="block w-full text-left px-3 py-2 font-semibold tracking-wide transition-colors duration-300 text-slate-100 hover:text-cyan-400 cursor-pointer bg-transparent hover:bg-transparent"
+                    className="block w-full text-left px-3 py-2 font-semibold tracking-wide transition-colors duration-300 text-green-400 hover:text-green-300 cursor-pointer bg-transparent hover:bg-transparent"
                     style={{ fontFamily: 'Orbitron, monospace' }}
                   >
                     {item.label}
@@ -134,13 +134,13 @@ export default function Navbar() {
                 )
               ))}
               <button
-                className="block w-full text-left px-3 py-2 font-semibold tracking-wide transition-colors duration-300 text-slate-100 hover:text-cyan-400 cursor-pointer bg-transparent hover:bg-transparent mt-2"
+                className="block w-full text-left px-3 py-2 font-semibold tracking-wide transition-colors duration-300 text-green-400 hover:text-green-300 cursor-pointer bg-transparent hover:bg-transparent mt-2"
                 style={{ fontFamily: 'Orbitron, monospace' }}
               >
                 Contact
               </button>
               <button
-                className="block w-full text-left px-3 py-2 font-semibold tracking-wide transition-colors duration-300 text-slate-100 hover:text-cyan-400 cursor-pointer bg-transparent hover:bg-transparent"
+                className="block w-full text-left px-3 py-2 font-semibold tracking-wide transition-colors duration-300 text-green-400 hover:text-green-300 cursor-pointer bg-transparent hover:bg-transparent"
                 style={{ fontFamily: 'Orbitron, monospace' }}
               >
                 Login
