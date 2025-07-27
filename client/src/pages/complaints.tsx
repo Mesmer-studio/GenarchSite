@@ -23,8 +23,8 @@ export default function Complaints() {
     defaultValues: {
       name: "",
       email: "",
-      category: "",
-      priority: "medium",
+      category: "general" as const,
+      priority: "medium" as const,
       description: "",
     },
   });
