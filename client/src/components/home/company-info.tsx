@@ -19,9 +19,9 @@ export default function CompanyInfo() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl font-bold text-[hsl(var(--genarch-charcoal))] mb-6">About Genarch Technologies</h2>
+            <h2 className="text-4xl font-bold text-[hsl(var(--genarch-charcoal))] mb-6">About GenArch Labs</h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Founded in 2015, Genarch Technologies has been at the forefront of digital innovation, helping businesses across industries leverage technology for sustainable growth and competitive advantage.
+              Founded in 2015, GenArch Labs has been at the forefront of laboratory innovation, helping research institutions and scientific organizations advance their discoveries through cutting-edge laboratory solutions.
             </p>
             
             <div className="grid sm:grid-cols-2 gap-8 mb-8">

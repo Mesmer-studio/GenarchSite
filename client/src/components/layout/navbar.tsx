@@ -41,9 +41,11 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/">
-              <h1 className="text-2xl font-bold text-[hsl(var(--genarch-primary))] cursor-pointer">
-                Genarch Technologies
-              </h1>
+              <div className="bg-gradient-to-r from-[hsl(var(--genarch-primary))] to-green-400 px-4 py-2 rounded-lg">
+                <h1 className="text-xl font-bold text-white cursor-pointer">
+                  GenArch Labs
+                </h1>
+              </div>
             </Link>
           </div>
 
@@ -67,14 +69,17 @@ export default function Navbar() {
                   <button
                     key={item.href}
                     onClick={() => handleNavClick(item)}
-                    className="nav-link px-3 py-2 text-sm font-medium transition-colors duration-200 text-[hsl(var(--genarch-charcoal))] hover:text-[hsl(var(--genarch-primary))] cursor-pointer"
+                    className="nav-link px-3 py-2 text-sm font-medium transition-colors duration-200 text-[hsl(var(--genarch-charcoal))] hover:text-[hsl(var(--genarch-primary))] cursor-pointer bg-transparent hover:bg-transparent"
                   >
                     {item.label}
                   </button>
                 )
               ))}
-              <Button className="bg-[hsl(var(--genarch-primary))] text-white hover:bg-blue-800 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">
+              <Button className="bg-[hsl(var(--genarch-primary))] text-white hover:bg-blue-800 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 mr-4">
                 Contact
+              </Button>
+              <Button className="bg-gradient-to-r from-green-500 to-blue-600 text-white hover:from-green-600 hover:to-blue-700 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200">
+                Login
               </Button>
             </div>
           </div>
@@ -114,14 +119,17 @@ export default function Navbar() {
                   <button
                     key={item.href}
                     onClick={() => handleNavClick(item)}
-                    className="block w-full text-left px-3 py-2 text-sm font-medium text-[hsl(var(--genarch-charcoal))] hover:text-[hsl(var(--genarch-primary))] cursor-pointer"
+                    className="block w-full text-left px-3 py-2 text-sm font-medium text-[hsl(var(--genarch-charcoal))] hover:text-[hsl(var(--genarch-primary))] cursor-pointer bg-transparent hover:bg-transparent"
                   >
                     {item.label}
                   </button>
                 )
               ))}
-              <Button className="block bg-[hsl(var(--genarch-primary))] text-white hover:bg-blue-800 px-3 py-2 rounded-lg text-sm font-medium mt-2 w-full">
+              <Button className="block bg-[hsl(var(--genarch-primary))] text-white hover:bg-blue-800 px-3 py-2 rounded-lg text-sm font-medium mt-2 w-full mb-2">
                 Contact
+              </Button>
+              <Button className="block bg-gradient-to-r from-green-500 to-blue-600 text-white hover:from-green-600 hover:to-blue-700 px-3 py-2 rounded-lg text-sm font-medium w-full">
+                Login
               </Button>
             </div>
           </div>

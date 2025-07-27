@@ -75,6 +75,13 @@
   
   .nav-link {
     @apply transition-colors duration-200;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  .nav-link:hover {
+    opacity: 1 !important;
+    visibility: visible !important;
   }
   
   .gradient-hero {

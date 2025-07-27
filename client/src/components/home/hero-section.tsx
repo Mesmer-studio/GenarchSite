@@ -5,11 +5,11 @@ export default function HeroSection() {
     <section className="gradient-hero py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
         <h1 className="text-5xl md:text-6xl font-bold text-[hsl(var(--genarch-charcoal))] mb-6 leading-tight">
-          Innovative Technology
+          Innovative Laboratory
           <span className="text-[hsl(var(--genarch-primary))] block">Solutions</span>
         </h1>
         <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Empowering businesses with cutting-edge technology solutions that drive growth, efficiency, and innovation in the digital era.
+          Empowering research and innovation with cutting-edge laboratory solutions that drive breakthrough discoveries and scientific excellence.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button className="bg-[hsl(var(--genarch-primary))] text-white px-8 py-4 text-lg font-semibold hover:bg-blue-800 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">

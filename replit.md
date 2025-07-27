@@ -1,4 +1,4 @@
-# Genarch Technologies - Corporate Website with Complaint System
+# GenArch Labs - Corporate Website with Complaint System
 
 ## Overview
 
