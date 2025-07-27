@@ -12,6 +12,7 @@ export default function Navbar() {
     { href: "#services", label: "Services", type: "scroll" },
     { href: "#about", label: "About", type: "scroll" },
     { href: "/complaints", label: "Support", type: "route" },
+    { href: "#contact", label: "Contact", type: "scroll" },
   ];
 
   const isActive = (href: string) => {
@@ -36,7 +37,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="glass-nav sticky top-0 z-50">
+    <nav className="glass-nav sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
@@ -49,7 +50,7 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline gap-10">
+            <div className="ml-10 flex items-center justify-center gap-10">
               {navItems.map((item) => (
                 item.type === "route" ? (
                   <Link
@@ -57,8 +58,8 @@ export default function Navbar() {
                     href={item.href}
                     className={`nav-link font-semibold tracking-wide transition-colors duration-300 ${
                       isActive(item.href)
-                        ? "text-green-400 font-bold"
-                        : "text-green-400 hover:text-green-300"
+                        ? "text-black font-bold"
+                        : "text-black hover:text-gray-700"
                     }`}
                     style={{ fontFamily: 'Orbitron, monospace' }}
                   >
@@ -68,7 +69,7 @@ export default function Navbar() {
                   <button
                     key={item.href}
                     onClick={() => handleNavClick(item)}
-                    className="nav-link font-semibold tracking-wide transition-colors duration-300 text-green-400 hover:text-green-300 cursor-pointer bg-transparent hover:bg-transparent"
+                    className="nav-link font-semibold tracking-wide transition-colors duration-300 text-black hover:text-gray-700 cursor-pointer bg-transparent hover:bg-transparent"
                     style={{ fontFamily: 'Orbitron, monospace' }}
                   >
                     {item.label}
@@ -76,13 +77,7 @@ export default function Navbar() {
                 )
               ))}
               <button
-                className="nav-link font-semibold tracking-wide transition-colors duration-300 text-green-400 hover:text-green-300 cursor-pointer bg-transparent hover:bg-transparent"
-                style={{ fontFamily: 'Orbitron, monospace' }}
-              >
-                Contact
-              </button>
-              <button
-                className="nav-link font-semibold tracking-wide transition-colors duration-300 text-green-400 hover:text-green-300 cursor-pointer bg-transparent hover:bg-transparent"
+                className="nav-link font-semibold tracking-wide transition-colors duration-300 text-black hover:text-gray-700 cursor-pointer bg-transparent hover:bg-transparent"
                 style={{ fontFamily: 'Orbitron, monospace' }}
               >
                 Login
@@ -96,7 +91,7 @@ export default function Navbar() {
               variant="ghost"
               size="sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-green-400 hover:text-green-300"
+              className="text-black hover:text-gray-700"
             >
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -114,8 +109,8 @@ export default function Navbar() {
                     href={item.href}
                     className={`block px-3 py-2 font-semibold tracking-wide transition-colors duration-300 ${
                       isActive(item.href)
-                        ? "text-green-400 font-bold"
-                        : "text-green-400 hover:text-green-300"
+                        ? "text-black font-bold"
+                        : "text-black hover:text-gray-700"
                     }`}
                     style={{ fontFamily: 'Orbitron, monospace' }}
                     onClick={() => setIsMobileMenuOpen(false)}
@@ -126,7 +121,7 @@ export default function Navbar() {
                   <button
                     key={item.href}
                     onClick={() => handleNavClick(item)}
-                    className="block w-full text-left px-3 py-2 font-semibold tracking-wide transition-colors duration-300 text-green-400 hover:text-green-300 cursor-pointer bg-transparent hover:bg-transparent"
+                    className="block w-full text-left px-3 py-2 font-semibold tracking-wide transition-colors duration-300 text-black hover:text-gray-700 cursor-pointer bg-transparent hover:bg-transparent"
                     style={{ fontFamily: 'Orbitron, monospace' }}
                   >
                     {item.label}
@@ -134,13 +129,7 @@ export default function Navbar() {
                 )
               ))}
               <button
-                className="block w-full text-left px-3 py-2 font-semibold tracking-wide transition-colors duration-300 text-green-400 hover:text-green-300 cursor-pointer bg-transparent hover:bg-transparent mt-2"
-                style={{ fontFamily: 'Orbitron, monospace' }}
-              >
-                Contact
-              </button>
-              <button
-                className="block w-full text-left px-3 py-2 font-semibold tracking-wide transition-colors duration-300 text-green-400 hover:text-green-300 cursor-pointer bg-transparent hover:bg-transparent"
+                className="block w-full text-left px-3 py-2 font-semibold tracking-wide transition-colors duration-300 text-black hover:text-gray-700 cursor-pointer bg-transparent hover:bg-transparent mt-2"
                 style={{ fontFamily: 'Orbitron, monospace' }}
               >
                 Login

@@ -236,7 +236,6 @@ export default function Complaints() {
                 <div className="flex flex-col sm:flex-row gap-4 pt-6">
                   <Button 
                     type="submit" 
-                    disabled={isSubmitting}
                     className="flex-1 bg-[hsl(var(--genarch-primary))] text-white px-8 py-4 text-lg font-semibold hover:bg-blue-800 transition-colors duration-200 shadow-lg hover:shadow-xl"
                   >
                     <Send className="mr-2 w-5 h-5" />

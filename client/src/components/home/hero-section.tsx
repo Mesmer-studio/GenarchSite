@@ -11,17 +11,7 @@ export default function HeroSection() {
         <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
           Empowering startups and solo developers with comprehensive UX testing environments to explore user experiences, discover app limitations, and unlock your product's true potential.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-[hsl(var(--genarch-primary))] text-white px-8 py-4 text-lg font-semibold hover:bg-blue-800 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-            Get Started
-          </Button>
-          <Button 
-            variant="outline" 
-            className="border-2 border-[hsl(var(--genarch-primary))] text-[hsl(var(--genarch-primary))] px-8 py-4 text-lg font-semibold hover:bg-[hsl(var(--genarch-primary))] hover:text-white transition-all duration-200"
-          >
-            Learn More
-          </Button>
-        </div>
+
       </div>
     </section>
   );
