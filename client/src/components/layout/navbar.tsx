@@ -38,10 +38,10 @@ export default function Navbar() {
   return (
     <nav className="glass-nav sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <Link href="/">
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent cursor-pointer drop-shadow-sm">
+              <h1 className="text-2xl lg:text-3xl font-bold font-mono bg-gradient-to-r from-pink-400 to-purple-600 bg-clip-text text-transparent cursor-pointer tracking-wide">
                 GenArch Labs
               </h1>
             </Link>
@@ -49,17 +49,18 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-baseline gap-10">
               {navItems.map((item) => (
                 item.type === "route" ? (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`nav-link px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                    className={`nav-link font-semibold tracking-wide transition-colors duration-300 ${
                       isActive(item.href)
-                        ? "text-[hsl(var(--genarch-primary))] font-semibold"
-                        : "text-[hsl(var(--genarch-charcoal))] hover:text-[hsl(var(--genarch-primary))]"
+                        ? "text-cyan-400 font-bold"
+                        : "text-slate-100 hover:text-cyan-400"
                     }`}
+                    style={{ fontFamily: 'Orbitron, monospace' }}
                   >
                     {item.label}
                   </Link>
@@ -67,18 +68,25 @@ export default function Navbar() {
                   <button
                     key={item.href}
                     onClick={() => handleNavClick(item)}
-                    className="nav-link px-3 py-2 text-sm font-medium transition-colors duration-200 text-[hsl(var(--genarch-charcoal))] hover:text-[hsl(var(--genarch-primary))] cursor-pointer bg-transparent hover:bg-transparent"
+                    className="nav-link font-semibold tracking-wide transition-colors duration-300 text-slate-100 hover:text-cyan-400 cursor-pointer bg-transparent hover:bg-transparent"
+                    style={{ fontFamily: 'Orbitron, monospace' }}
                   >
                     {item.label}
                   </button>
                 )
               ))}
-              <Button className="bg-black text-white hover:bg-gray-800 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">
+              <button
+                className="nav-link font-semibold tracking-wide transition-colors duration-300 text-slate-100 hover:text-cyan-400 cursor-pointer bg-transparent hover:bg-transparent"
+                style={{ fontFamily: 'Orbitron, monospace' }}
+              >
                 Contact
-              </Button>
-              <Button className="bg-gradient-to-r from-green-500 to-blue-600 text-white hover:from-green-600 hover:to-blue-700 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200">
+              </button>
+              <button
+                className="nav-link font-semibold tracking-wide transition-colors duration-300 text-slate-100 hover:text-cyan-400 cursor-pointer bg-transparent hover:bg-transparent"
+                style={{ fontFamily: 'Orbitron, monospace' }}
+              >
                 Login
-              </Button>
+              </button>
             </div>
           </div>
 
@@ -88,7 +96,7 @@ export default function Navbar() {
               variant="ghost"
               size="sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-[hsl(var(--genarch-charcoal))] hover:text-[hsl(var(--genarch-primary))]"
+              className="text-slate-100 hover:text-cyan-400"
             >
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -98,17 +106,18 @@ export default function Navbar() {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden pb-4">
-            <div className="space-y-1">
+            <div className="space-y-3">
               {navItems.map((item) => (
                 item.type === "route" ? (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`block px-3 py-2 text-sm font-medium ${
+                    className={`block px-3 py-2 font-semibold tracking-wide transition-colors duration-300 ${
                       isActive(item.href)
-                        ? "text-[hsl(var(--genarch-primary))] font-semibold"
-                        : "text-[hsl(var(--genarch-charcoal))] hover:text-[hsl(var(--genarch-primary))]"
+                        ? "text-cyan-400 font-bold"
+                        : "text-slate-100 hover:text-cyan-400"
                     }`}
+                    style={{ fontFamily: 'Orbitron, monospace' }}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
@@ -117,18 +126,25 @@ export default function Navbar() {
                   <button
                     key={item.href}
                     onClick={() => handleNavClick(item)}
-                    className="block w-full text-left px-3 py-2 text-sm font-medium text-[hsl(var(--genarch-charcoal))] hover:text-[hsl(var(--genarch-primary))] cursor-pointer bg-transparent hover:bg-transparent"
+                    className="block w-full text-left px-3 py-2 font-semibold tracking-wide transition-colors duration-300 text-slate-100 hover:text-cyan-400 cursor-pointer bg-transparent hover:bg-transparent"
+                    style={{ fontFamily: 'Orbitron, monospace' }}
                   >
                     {item.label}
                   </button>
                 )
               ))}
-              <Button className="block bg-[hsl(var(--genarch-primary))] text-white hover:bg-blue-800 px-3 py-2 rounded-lg text-sm font-medium mt-2 w-full mb-2">
+              <button
+                className="block w-full text-left px-3 py-2 font-semibold tracking-wide transition-colors duration-300 text-slate-100 hover:text-cyan-400 cursor-pointer bg-transparent hover:bg-transparent mt-2"
+                style={{ fontFamily: 'Orbitron, monospace' }}
+              >
                 Contact
-              </Button>
-              <Button className="block bg-gradient-to-r from-green-500 to-blue-600 text-white hover:from-green-600 hover:to-blue-700 px-3 py-2 rounded-lg text-sm font-medium w-full">
+              </button>
+              <button
+                className="block w-full text-left px-3 py-2 font-semibold tracking-wide transition-colors duration-300 text-slate-100 hover:text-cyan-400 cursor-pointer bg-transparent hover:bg-transparent"
+                style={{ fontFamily: 'Orbitron, monospace' }}
+              >
                 Login
-              </Button>
+              </button>
             </div>
           </div>
         )}
