@@ -7,7 +7,7 @@ export default function VisionSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-[hsl(var(--genarch-charcoal))] mb-6">Our Vision</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            To be the leading technology partner that transforms businesses through innovative solutions and strategic digital transformation.
+            To be the premier UX testing partner that helps startups and developers create exceptional user experiences through comprehensive testing environments and intelligent insights.
           </p>
         </div>
         
@@ -18,10 +18,10 @@ export default function VisionSection() {
                 <div className="bg-[hsl(var(--genarch-primary))] p-3 rounded-lg mr-4">
                   <Lightbulb className="text-white w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-semibold text-[hsl(var(--genarch-charcoal))]">Innovation First</h3>
+                <h3 className="text-2xl font-semibold text-[hsl(var(--genarch-charcoal))]">Smart Testing</h3>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                We believe in pushing boundaries and creating solutions that don't just meet today's needs, but anticipate tomorrow's challenges.
+                We create intelligent testing environments that simulate real user behaviors, providing actionable insights to optimize your application's user experience.
               </p>
             </div>
             
@@ -30,10 +30,10 @@ export default function VisionSection() {
                 <div className="bg-[hsl(var(--genarch-accent))] p-3 rounded-lg mr-4">
                   <Users className="text-white w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-semibold text-[hsl(var(--genarch-charcoal))]">Client-Centric</h3>
+                <h3 className="text-2xl font-semibold text-[hsl(var(--genarch-charcoal))]">Developer-Focused</h3>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                Every solution we develop is tailored to our clients' unique needs, ensuring maximum value and sustainable growth.
+                Every testing solution is designed specifically for startups and solo developers, providing affordable, comprehensive UX insights that drive product success.
               </p>
             </div>
           </div>

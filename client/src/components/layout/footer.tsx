@@ -9,8 +9,8 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <h3 className="text-2xl font-bold mb-4">GenArch Labs</h3>
             <p className="text-gray-200 mb-6 leading-relaxed max-w-lg font-medium">
-              Empowering businesses with innovative technology solutions since 2015. 
-              Your trusted partner for digital transformation and growth.
+              A specialized division of GenArch Technologies, empowering startups and solo developers with comprehensive UX testing environments since 2015. 
+              Your trusted partner for user experience optimization and app success.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="bg-gray-700 hover:bg-[hsl(var(--genarch-primary))] p-3 rounded-lg transition-colors duration-200">

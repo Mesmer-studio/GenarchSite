@@ -5,11 +5,11 @@ export default function HeroSection() {
     <section className="gradient-hero py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
         <h1 className="text-5xl md:text-6xl font-bold text-[hsl(var(--genarch-charcoal))] mb-6 leading-tight">
-          Innovative Laboratory
-          <span className="text-[hsl(var(--genarch-primary))] block">Solutions</span>
+          User Experience
+          <span className="text-[hsl(var(--genarch-primary))] block">Testing Labs</span>
         </h1>
         <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Empowering research and innovation with cutting-edge laboratory solutions that drive breakthrough discoveries and scientific excellence.
+          Empowering startups and solo developers with comprehensive UX testing environments to explore user experiences, discover app limitations, and unlock your product's true potential.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button className="bg-[hsl(var(--genarch-primary))] text-white px-8 py-4 text-lg font-semibold hover:bg-blue-800 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">

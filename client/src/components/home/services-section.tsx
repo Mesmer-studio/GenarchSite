@@ -4,51 +4,51 @@ import { Cloud, Smartphone, Brain, Shield, Code, ServerCog, Check } from "lucide
 
 const services = [
   {
-    icon: Cloud,
-    title: "Cloud Solutions",
-    description: "Scalable cloud infrastructure and migration services that ensure your business stays agile and secure.",
-    price: "Starting at $999/month",
-    features: ["24/7 Monitoring", "Auto Scaling", "Security Compliance"],
+    icon: Brain,
+    title: "UX Testing Environment",
+    description: "Comprehensive testing environments designed to simulate real-world user interactions and behaviors.",
+    price: "Starting at $299/month",
+    features: ["Real User Simulation", "Behavior Analytics", "Heatmap Analysis"],
     gradient: "from-[hsl(var(--genarch-primary))] to-[hsl(var(--genarch-accent))]"
   },
   {
     icon: Smartphone,
-    title: "Mobile Development",
-    description: "Native and cross-platform mobile applications that deliver exceptional user experiences.",
-    price: "Starting at $1,499/month",
-    features: ["iOS & Android", "Cross-platform", "App Store Support"],
+    title: "Mobile App Testing",
+    description: "Specialized testing for mobile applications across different devices, OS versions, and user scenarios.",
+    price: "Starting at $399/month",
+    features: ["Cross-Device Testing", "Performance Monitoring", "User Journey Mapping"],
     gradient: "from-[hsl(var(--genarch-accent))] to-blue-500"
   },
   {
-    icon: Brain,
-    title: "AI & Analytics",
-    description: "Intelligent data analytics and AI solutions that transform your data into actionable insights.",
-    price: "Starting at $2,499/month",
-    features: ["Machine Learning", "Predictive Analytics", "Custom Dashboards"],
-    gradient: "from-blue-500 to-purple-600"
-  },
-  {
     icon: Shield,
-    title: "Cybersecurity",
-    description: "Comprehensive security solutions to protect your digital assets and maintain compliance.",
-    price: "Starting at $799/month",
-    features: ["Threat Detection", "Vulnerability Assessment", "Incident Response"],
+    title: "Pre-Launch Analysis",
+    description: "Identify potential issues and optimization opportunities before your app goes live.",
+    price: "Starting at $599/month",
+    features: ["Usability Assessment", "Performance Analysis", "Accessibility Testing"],
     gradient: "from-green-500 to-blue-500"
   },
   {
     icon: Code,
-    title: "Web Development",
-    description: "Modern, responsive web applications built with the latest technologies and best practices.",
-    price: "Starting at $1,299/month",
-    features: ["Responsive Design", "SEO Optimization", "Performance Tuning"],
+    title: "Post-Launch Optimization",
+    description: "Continuous monitoring and smart upgrade recommendations to enhance user experience.",
+    price: "Starting at $499/month",
+    features: ["Real-time Monitoring", "A/B Testing", "User Feedback Analysis"],
     gradient: "from-purple-500 to-pink-500"
   },
   {
+    icon: Cloud,
+    title: "Scalability Testing",
+    description: "Test your application's limits and capabilities under various load conditions.",
+    price: "Starting at $799/month",
+    features: ["Load Testing", "Stress Testing", "Capacity Planning"],
+    gradient: "from-blue-500 to-purple-600"
+  },
+  {
     icon: ServerCog,
-    title: "DevOps & Automation",
-    description: "Streamlined development workflows and automated deployment pipelines for faster delivery.",
-    price: "Starting at $1,199/month",
-    features: ["CI/CD Pipelines", "Infrastructure as Code", "Monitoring & Alerts"],
+    title: "Integration Testing",
+    description: "Ensure seamless integration between different components and third-party services.",
+    price: "Starting at $449/month",
+    features: ["API Testing", "Database Testing", "Third-party Integration"],
     gradient: "from-orange-500 to-red-500"
   }
 ];
@@ -58,9 +58,9 @@ export default function ServicesSection() {
     <section id="services" className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[hsl(var(--genarch-charcoal))] mb-6">Our Services & Plans</h2>
+          <h2 className="text-4xl font-bold text-[hsl(var(--genarch-charcoal))] mb-6">Our Testing Services & Plans</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive technology solutions designed to accelerate your business growth and digital transformation.
+            Comprehensive UX testing solutions designed to help startups and solo developers create exceptional user experiences and optimize their applications for success.
           </p>
         </div>
 

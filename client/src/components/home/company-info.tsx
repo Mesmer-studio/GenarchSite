@@ -21,7 +21,7 @@ export default function CompanyInfo() {
           <div>
             <h2 className="text-4xl font-bold text-[hsl(var(--genarch-charcoal))] mb-6">About GenArch Labs</h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Founded in 2015, GenArch Labs has been at the forefront of laboratory innovation, helping research institutions and scientific organizations advance their discoveries through cutting-edge laboratory solutions.
+              GenArch Labs is a specialized division of GenArch Technologies, dedicated to helping startups and solo developers test their applications in environments designed to explore user experience, identify limitations and capabilities, and provide smart upgrade recommendations both pre and post launch.
             </p>
             
             <div className="grid sm:grid-cols-2 gap-8 mb-8">

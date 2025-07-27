@@ -89,9 +89,9 @@ export default function Complaints() {
     <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50 min-h-screen">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-[hsl(var(--genarch-charcoal))] mb-6">Customer Support</h1>
+          <h1 className="text-4xl font-bold text-[hsl(var(--genarch-charcoal))] mb-6">Testing Support</h1>
           <p className="text-xl text-gray-600">
-            We're here to help. Please provide details about your issue and we'll get back to you as soon as possible.
+            Need help with our UX testing services? Report issues with your testing environment or get support for your testing projects. We'll get back to you as soon as possible.
           </p>
         </div>
 

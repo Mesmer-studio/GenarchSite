@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a full-stack web application for Genarch Technologies, a technology services company. The application features a modern corporate website with an integrated complaint submission system. Built with React frontend and Express backend, it uses Drizzle ORM for database operations with PostgreSQL.
+This is a full-stack web application for GenArch Labs, a specialized division of GenArch Technologies focused on UX testing services. GenArch Labs helps startups and solo developers test their applications in environments designed to explore user experience, identify limitations and capabilities, and provide smart upgrade recommendations both pre and post launch. The application features a modern corporate website with an integrated complaint submission system. Built with React frontend and Express backend, it uses Drizzle ORM for database operations with PostgreSQL.
 
 ## User Preferences
 
